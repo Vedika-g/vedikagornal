@@ -1,5 +1,5 @@
 import { ArrowRight, Github, Linkedin, Mail, Sparkles } from "lucide-react";
-import portrait from "@/assets/vedika-portrait.jpg";
+import portrait from "@/assets/vedika-portrait-new.png";
 
 const socials = [
   {

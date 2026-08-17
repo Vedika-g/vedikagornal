@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { Reveal } from "@/hooks/use-reveal";
 import { SectionHeading } from "./Sections";
@@ -6,22 +5,6 @@ import { SectionHeading } from "./Sections";
 const EMAIL = "vedikasgornal@gmail.com";
 
 export function Contact() {
-  const [sent, setSent] = useState(false);
-
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const data = new FormData(e.currentTarget);
-    const subject = encodeURIComponent(String(data.get("subject") || "Portfolio enquiry"));
-    const body = encodeURIComponent(
-      `Name: ${data.get("name")}\nEmail: ${data.get("email")}\n\n${data.get("message")}`,
-    );
-    window.location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`;
-    setSent(true);
-  };
-
-  const field =
-    "w-full rounded-lg border border-input bg-background/60 px-3.5 py-2.5 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground focus:border-primary/60";
-
   return (
     <section id="contact" className="mx-auto max-w-6xl px-5 py-20 md:py-28">
       <SectionHeading
@@ -30,7 +13,7 @@ export function Contact() {
         subtitle="Open to internships, project collaborations and conversations about AI, software and data."
       />
 
-      <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+      <div className="mx-auto max-w-2xl">
         <Reveal>
           <div className="surface-card h-full space-y-5 p-6 sm:p-8">
             {[
@@ -77,65 +60,17 @@ export function Contact() {
         </Reveal>
 
         <Reveal delay={90}>
-          <form onSubmit={onSubmit} className="surface-card space-y-4 p-6 sm:p-8">
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div>
-                <label htmlFor="name" className="mb-1.5 block text-xs text-muted-foreground">
-                  Name
-                </label>
-                <input id="name" name="name" required placeholder="Your name" className={field} />
-              </div>
-              <div>
-                <label htmlFor="email" className="mb-1.5 block text-xs text-muted-foreground">
-                  Email
-                </label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  required
-                  placeholder="you@example.com"
-                  className={field}
-                />
-              </div>
-            </div>
-            <div>
-              <label htmlFor="subject" className="mb-1.5 block text-xs text-muted-foreground">
-                Subject
-              </label>
-              <input
-                id="subject"
-                name="subject"
-                required
-                placeholder="What's this about?"
-                className={field}
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="mb-1.5 block text-xs text-muted-foreground">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={5}
-                required
-                placeholder="Tell me a little about it…"
-                className={field}
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
+          <div className="surface-card mt-6 flex flex-col items-center gap-4 p-8 text-center sm:p-10">
+            <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
+              Prefer email? Reach out directly and I'll get back to you as soon as I can.
+            </p>
+            <a
+              href={`mailto:${EMAIL}`}
+              className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
             >
-              Send Message
-            </button>
-            {sent && (
-              <p className="text-center text-xs text-muted-foreground">
-                Your email app should open with the message ready to send.
-              </p>
-            )}
-          </form>
+              <Mail size={16} /> Send an Email
+            </a>
+          </div>
         </Reveal>
       </div>
     </section>
