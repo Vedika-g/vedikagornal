@@ -108,7 +108,7 @@ export function Hero() {
                 alt="Portrait of Vedika Gornal"
                 width={1024}
                 height={1024}
-                className="h-full w-full object-cover object-[20%_center]"
+                className="h-full w-full object-cover object-[10%_center]"
               />
             </div>
 
