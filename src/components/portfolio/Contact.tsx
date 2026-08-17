@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { Reveal } from "@/hooks/use-reveal";
 import { SectionHeading } from "./Sections";
@@ -6,19 +5,6 @@ import { SectionHeading } from "./Sections";
 const EMAIL = "vedikasgornal@gmail.com";
 
 export function Contact() {
-  const [sent, setSent] = useState(false);
-
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const data = new FormData(e.currentTarget);
-    const subject = encodeURIComponent(String(data.get("subject") || "Portfolio enquiry"));
-    const body = encodeURIComponent(
-      `Name: ${data.get("name")}\nEmail: ${data.get("email")}\n\n${data.get("message")}`,
-    );
-    window.location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`;
-    setSent(true);
-  };
-
   const field =
     "w-full rounded-lg border border-input bg-background/60 px-3.5 py-2.5 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground focus:border-primary/60";
 
