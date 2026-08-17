@@ -60,65 +60,17 @@ export function Contact() {
         </Reveal>
 
         <Reveal delay={90}>
-          <form onSubmit={onSubmit} className="surface-card space-y-4 p-6 sm:p-8">
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div>
-                <label htmlFor="name" className="mb-1.5 block text-xs text-muted-foreground">
-                  Name
-                </label>
-                <input id="name" name="name" required placeholder="Your name" className={field} />
-              </div>
-              <div>
-                <label htmlFor="email" className="mb-1.5 block text-xs text-muted-foreground">
-                  Email
-                </label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  required
-                  placeholder="you@example.com"
-                  className={field}
-                />
-              </div>
-            </div>
-            <div>
-              <label htmlFor="subject" className="mb-1.5 block text-xs text-muted-foreground">
-                Subject
-              </label>
-              <input
-                id="subject"
-                name="subject"
-                required
-                placeholder="What's this about?"
-                className={field}
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="mb-1.5 block text-xs text-muted-foreground">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={5}
-                required
-                placeholder="Tell me a little about it…"
-                className={field}
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
+          <div className="surface-card mt-6 flex flex-col items-center gap-4 p-8 text-center sm:p-10">
+            <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
+              Prefer email? Reach out directly and I'll get back to you as soon as I can.
+            </p>
+            <a
+              href={`mailto:${EMAIL}`}
+              className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
             >
-              Send Message
-            </button>
-            {sent && (
-              <p className="text-center text-xs text-muted-foreground">
-                Your email app should open with the message ready to send.
-              </p>
-            )}
-          </form>
+              <Mail size={16} /> Send an Email
+            </a>
+          </div>
         </Reveal>
       </div>
     </section>
