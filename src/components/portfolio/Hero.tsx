@@ -94,7 +94,7 @@ export function Hero() {
         </div>
 
         {/* Portrait side */}
-        <div className="order-1 flex justify-center lg:order-2 lg:justify-start lg:pl-20">
+        <div className="order-1 flex justify-center lg:order-2 lg:justify-start lg:-translate-x-16">
           <div className="group relative h-72 w-72 md:h-96 md:w-96">
             <div className="absolute -inset-4 animate-pulse rounded-full bg-[image:var(--gradient-accent)] opacity-20 blur-2xl transition-opacity duration-500 group-hover:opacity-40" />
 
