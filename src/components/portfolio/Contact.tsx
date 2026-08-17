@@ -5,9 +5,6 @@ import { SectionHeading } from "./Sections";
 const EMAIL = "vedikasgornal@gmail.com";
 
 export function Contact() {
-  const field =
-    "w-full rounded-lg border border-input bg-background/60 px-3.5 py-2.5 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground focus:border-primary/60";
-
   return (
     <section id="contact" className="mx-auto max-w-6xl px-5 py-20 md:py-28">
       <SectionHeading
@@ -16,7 +13,7 @@ export function Contact() {
         subtitle="Open to internships, project collaborations and conversations about AI, software and data."
       />
 
-      <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+      <div className="mx-auto max-w-2xl">
         <Reveal>
           <div className="surface-card h-full space-y-5 p-6 sm:p-8">
             {[
