@@ -1,7 +1,7 @@
 import {
   BarChart3, BrainCircuit, Code2, Database, GraduationCap, Layers, Sparkles, Wrench,
 } from "lucide-react";
-import portrait from "@/assets/vedika-portrait.jpg";
+import portrait from "@/assets/vedika-portrait-new.png";
 import { Reveal } from "@/hooks/use-reveal";
 
 export function SectionHeading({
