@@ -4,6 +4,27 @@ import { Hero } from "@/components/portfolio/Hero";
 import { About, Skills, Services, Education } from "@/components/portfolio/Sections";
 import { Projects } from "@/components/portfolio/Projects";
 import { Contact, Footer } from "@/components/portfolio/Contact";
+// 1. Add this import at the very top of index.tsx
+import Head from "next/head"; 
+import { Hero } from "@/components/Hero"; // (or wherever your components are)
+
+export default function Home() {
+  return (
+    <>
+      {/* 2. Add the Head block with your Google verification tag */}
+      <Head>
+        <title>Vedika Gornal | Portfolio</title>
+        <meta name="google-site-verification" content="PASTE_YOUR_COPIED_STRING_HERE" />
+      </Head>
+
+      {/* Your existing components go below */}
+      <main>
+        <Hero />
+        {/* other components... */}
+      </main>
+    </>
+  );
+}
 
 const title = "Vedika Gornal — CSE Student | AI/ML & Data Analytics";
 const description =
