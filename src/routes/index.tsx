@@ -19,7 +19,7 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "profile" },
       { name: "twitter:card", content: "summary_large_image" },
       // 1. ADDED GOOGLE VERIFICATION CODE CLEANLY HERE FOR TANSTACK ROUTER
-      { name: "google-site-verification", content: "YOUR_COPIED_STRING_FROM_GOOGLE" },
+      { name: "google-site-verification", content:"wvCwoeZMvJgCuEch9f9W0nJqq6oy-eQxpSF-fQC_d8c"},
     ],
   }),
   component: Index,
