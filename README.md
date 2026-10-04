@@ -1,53 +1,6 @@
 # AI Visionary Hub
 
-<portfolio_prompt>
-
-take this image as an example
-Create a **clean, modern, professional portfolio website for Vedika Gornal**, a final-year Computer Science Engineering student with a strong interest in **Software Development, Artificial Intelligence, Machine Learning, Computer Vision, and Data Analytics**.
-
-The website should present Vedika as an aspiring technology professional who enjoys transforming ideas into practical solutions and continuously developing her programming, problem-solving, and technical skills. The overall design should feel **modern, minimalistic, polished, technology-focused, and highly usable**, with a preference for a **dark-mode aesthetic** and subtle, sophisticated visual effects.
-
-### 1. Overall Design Direction
-
-Use a **premium modern dark-tech aesthetic** with:
-
-* Dark background such as charcoal, near-black, or deep navy.
-* Clean typography with excellent readability.
-* One or two subtle accent colors, preferably a cool blue, cyan, violet, or similar technology-inspired palette.
-* Generous whitespace and clean spacing.
-* Minimalistic cards with subtle borders and shadows.
-* Subtle gradients rather than excessive visual effects.
-* Smooth hover animations and tasteful page transitions.
-* Modern rounded buttons and cards without making the interface overly playful.
-* Responsive design for desktop, tablet, and mobile.
-* Strong accessibility and readable color contrast.
-* Avoid excessive animations, clutter, stock imagery, or unnecessary decorative elements.
-
-Use a **professional profile picture of Vedika** in the hero/about area. The profile image should be displayed in a clean circular or softly rounded frame with a subtle accent glow or border.
-
-The website should communicate: **"CSE Student → AI/ML + Software Development + Data Analytics"**.
-
----
-
-## 2. Navigation
-
-Create a simple sticky navigation bar containing:
-
-* Home
-* About
-* Skills
-* Projects
-* Services
-* Education
-* Contact
-
-Include a prominent **"Let's Connect"** or **"Contact Me"** button.
-
-The navigation should become compact on smaller screens and use a clean mobile menu.
-
----
-
-# 3. Hero / Home Section
+# 1. Hero / Home Section
 
 The hero section should immediately communicate who Vedika is and what she does.
 
@@ -87,7 +40,7 @@ Include social icons for:
 
 ---
 
-# 4. About Section
+# 2. About Section
 
 Create an engaging About section introducing Vedika beyond the basic resume information.
 
@@ -116,7 +69,7 @@ Do not exaggerate experience or claim professional employment.
 
 ---
 
-# 5. Skills Section
+# 3. Skills Section
 
 Create a visually appealing skills section organized into categories rather than displaying one large list.
 
@@ -177,7 +130,7 @@ Avoid misleading percentage-based skill bars such as "Java 95%" unless actual pr
 
 ---
 
-# 6. Projects Section
+# 4. Projects Section
 
 Make Projects one of the most prominent sections of the website.
 
@@ -308,7 +261,7 @@ Avoid presenting Vedika as an established agency or senior professional. Positio
 
 ---
 
-# 8. Education Section
+# 5. Education Section
 
 Create a clean timeline or education card.
 
@@ -325,7 +278,7 @@ Use a timeline-style design with a subtle academic/technology icon.
 
 ---
 
-# 9. Experience Section
+# 6. Experience Section
 
 Since Vedika currently has **no professional work experience**, do not create fake employment history.
 
@@ -345,7 +298,7 @@ This section should reinforce that she is an aspiring technology professional an
 
 ---
 
-# 10. Contact Section
+# 7. Contact Section
 
 Create a visually clean "Let's Build Something Together" contact section.
 
@@ -368,135 +321,6 @@ Include a simple contact form containing:
 * Message
 * Send Message button
 
-The contact section should feel approachable while maintaining a professional appearance.
-
 ---
 
-# 11. Footer
 
-Create a minimal footer containing:
-
-**Vedika Gornal**
-
-"Computer Science Engineering Student | AI/ML | Software Development | Data Analytics"
-
-Include:
-
-* LinkedIn
-* GitHub
-* Email
-
-Add a simple copyright notice.
-
----
-
-# 12. Visual & Interaction Requirements
-
-The website should have a **premium developer portfolio feel**, not a generic student template.
-
-Use:
-
-* Dark/light theme compatibility if practical, with dark mode as the preferred default.
-* Smooth scrolling.
-* Subtle reveal-on-scroll animations.
-* Hover effects on project and skill cards.
-* Interactive project cards.
-* Micro-interactions on buttons.
-* Sticky navigation.
-* Responsive layouts.
-* Accessible typography.
-* Consistent spacing.
-* Optimized images.
-* Fast loading performance.
-
-Animations should be subtle and purposeful. Avoid excessive parallax effects, flashing elements, spinning graphics, or distracting background animations.
-
----
-
-# 13. Suggested Visual Identity
-
-The visual identity should combine:
-
-**AI/Technology + Minimalism + Professionalism + Student Innovation**
-
-Use a restrained dark palette such as:
-
-* Near-black / charcoal background
-* Dark navy secondary surfaces
-* White/off-white primary text
-* Cool blue/cyan or violet accent
-* Subtle gradients
-
-Typography should be modern and professional, with a strong display font for headings and a highly readable sans-serif for body text.
-
-Use consistent iconography throughout the website.
-
----
-
-# 14. Profile Positioning
-
-The website should position Vedika as:
-
-> **A final-year Computer Science Engineering student building practical solutions across AI/ML, software development, mobile applications, and data analytics.**
-
-The tone should be:
-
-* Confident but not exaggerated
-* Professional
-* Curious
-* Technology-focused
-* Approachable
-* Future-oriented
-
-Do not invent:
-
-* Work experience
-* Certifications
-* Awards
-* Job titles
-* Client testimonials
-* Project statistics
-* Company experience
-* Fake achievements
-
-Only use information provided in this portfolio brief.
-
----
-
-# 15. Overall User Experience
-
-The final website should feel like a **modern personal technology brand** rather than a conventional academic resume.
-
-The visitor should be able to understand within a few seconds:
-
-1. Who Vedika is.
-2. What technologies she works with.
-3. What kinds of problems she is interested in solving.
-4. What projects she has built.
-5. What services/technical capabilities she offers.
-6. How to contact her.
-
-Prioritize **clarity, usability, aesthetics, responsiveness, and professional presentation** throughout the entire website.
-
-This project was built with [Lovable](https://lovable.dev).
-
-**Live app**: https://vedikagornal.lovable.app
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/cb33f6d4-e3fe-4c91-8868-922b7731474b).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
